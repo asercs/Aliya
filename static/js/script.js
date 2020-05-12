@@ -170,7 +170,7 @@ if(activeUser.isBanned === true){
   banPage();
   return false;
 }
-if(activeUser.email == "admin@gmail.com" && activeUser.password == "IAmAdmin!"){
+if(signEmail == "admin@gmail.com" && signPass == "IAmAdmin!"){
   itsadmin();
   return false;
 }
