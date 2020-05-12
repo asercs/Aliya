@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Заголовок страницы -->
+    <title>That's what we found</title>
+    <!-- Внешний файл с CSS стилями -->
+    <link rel="stylesheet" href="../static/css/res.css">
+    <!-- мини лого возле заголовка в закладке браузера -->
+    <link rel="shortcut icon" href="../static/img/logo.png" type="image/x-icon">
+    <!-- bootstrap -->
+    
+</head>
+<body>
+  <!-- Шапка - блок Header -->
+  <header class="header">       
+    <!-- лого сайта - надпись cintiment -->
+    <div class="first-row">
+      <div id="logo">
+        <span>CINTIMENT</span>
+      </div>
+      <div class="responsive-menu-btn" id="responsive-menu-btn" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+      </div>
+    </div>
+    <!-- блок с основным меню -->
+    <div id="menu">
+        <a href="../index.html">Homepage</a>
+        <a href="../week_top.html">Top movies of week</a>
+        <a href="../login.html">Log in</a>
+        <a href="../register.html">Create account</a>                
+    </div>
+    <script>
+      function onClickMenu() {
+        
+        document.getElementById("responsive-menu-btn").classList.toggle("change");
+        document.getElementById("menu").classList.toggle("change");
+      }
+    </script>
+  </header>
+
+  
+
+  <!-- главный блок -->
+<div id="main">
+    <div class="main-container">
+        <div class="title">
+            <h2>Movies that we recommend to you</h2>
+          </div>
+          <div class="results">
+              <div class="moviews-container">
+                <a href="../movies list/watch4.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(../static/img/movie-img/avengers.jpg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">Avengers</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="../movies list/watch8.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(../static/img/movie-img/starwars.jpg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">Star wars</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="../movies list/watch6.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(../static/img/movie-img/io.jpg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">IO</div>
+                        </div>
+                    </div>
+                </a>
+               
+              </div>
+          </div>
+      </div>
+    <br><br><br>
+  </div>
+
+  <!-- блок футер -->
+  <div id="footer">
+    <div class="footer_info">
+      <p>CINTIMENT - website that will help you to find the movies of your mood</p>
+      <p>&reg; 2020. All rights reserved.</p>
+    </div>
+  </div>
+
+
+</body>
+</html>
