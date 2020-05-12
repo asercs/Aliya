@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- Заголовок страницы -->
+    <title>Hall pass</title>
+    <!-- Внешний файл с CSS стилями -->
+    <link rel="stylesheet" href="../static/css/watch.css">
+    <!-- мини лого возле заголовка в закладке браузера -->
+    <link rel="shortcut icon" href="../static/img/logo.png" type="image/x-icon">
+    <!-- bootstrap -->
+    
+</head>
+<body>
+  <!-- Шапка - блок Header -->
+  <header class="header">       
+    <!-- лого сайта - надпись cintiment -->
+    <div class="first-row">
+      <div id="logo">
+        <span>CINTIMENT</span>
+      </div>
+      <div class="responsive-menu-btn" id="responsive-menu-btn" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+      </div>
+    </div>
+    <!-- блок с основным меню -->
+    <div id="menu">
+        <a href="../index.html">Homepage</a>
+        <a href="../week_top.html">Top movies of week</a>
+        <a href="../login.html">Log in</a>
+        <a href="../register.html">Create account</a>                
+    </div>
+    <script>
+      function onClickMenu() {
+        
+        document.getElementById("responsive-menu-btn").classList.toggle("change");
+        document.getElementById("menu").classList.toggle("change");
+      }
+    </script>
+  </header>
+
+  
+
+  <!-- главный блок -->
+    <div id="main">
+        <div class="main-container">
+            <div class="movie-info">
+                <div class="mov-img">
+                    <img src="../static/img/movie-img/hallpass.jfif" alt="">
+                    
+                    <a href="https://www.youtube.com/embed/1JMCvX6qXuo" class="trailer">Trailer</a>
+                </div>
+                <div class="main-info">
+                    <h1 class="mov-name">Hall pass</h1>
+                    <small class="mov-name-en">Hall pass</small><br>
+                    <small class="mov-cat">Genre: Comedy</small>
+
+                    <div class="desc">
+                       Rick (Owen Wilson) and Fred (Jason Sudeikis) are best friends who have a lot in common, including the fact that they have each been married for many years. But when the two men begin to show signs of restlessness at home, their wives (Jenna Fischer, Christina Applegate) take a bold approach to revitalizing their marriages: granting them a "hall pass," one week of freedom to do whatever they want...no questions asked. At first, it sounds like a dream come true for Rick and Fred. But it isn't long before they discover that their expectations of the single life-and themselves-are completely, and hilariously, out of sync with          
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <h3 class="title-acts">Cast:</h3>
+                    <ul class="actors">
+                        <li class="actor">Owen Wilson</li>
+                        <li class="actor">Jason Sudeikis</li>
+                        <li class="actor">Jenna Fischer</li>
+                        <li class="actor">Christina Applegate</li>
+                        <li class="actor">Nicky Whelan</li>
+                        <li class="actor">Richard Jenkins</li>                       
+                    </ul>
+                </div>
+            </div>
+             
+            <div class="mov-player">
+                <iframe width="640" height="360" src="https://voidboost.net/embed/195384" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="reviews-wrapper">
+                <div class="rev-title">
+                    <h2>Reviews about site</h2>
+                    <hr>
+                </div>
+                <div class="review-form">
+                    <h3>Write review</h3><br>
+                    <form action="" method="">
+                        <input class="f-elem" type="text" name="name" id="name" placeholder="Your name" required>
+                        <textarea class="f-elem" name="comment" placeholder="Text of comment" id="comment" cols="30" rows="10" required></textarea>
+                        <input type="submit" class="sub-btn" value="Save">
+                    </form>
+                    
+                </div>
+                <br>
+                <hr>
+                <div class="reviews" id="blockReviews">
+                 
+                </div>
+                <hr>
+            </div>
+            
+        </div>
+    </div>
+
+  <!-- блок футер -->
+<div id="footer">
+    <div class="footer_info">
+      <p>CINTIMENT - website that will help you to find the movies of your mood</p>
+      <p>&reg; 2020. All rights reserved.</p>
+    </div>
+  </div>
+
+<script src="../static/js/review.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- Заголовок страницы -->
+    <title>Me myself and Irene</title>
+    <!-- Внешний файл с CSS стилями -->
+    <link rel="stylesheet" href="../static/css/watch.css">
+    <!-- мини лого возле заголовка в закладке браузера -->
+    <link rel="shortcut icon" href="../static/img/logo.png" type="image/x-icon">
+    <!-- bootstrap -->
+    
+</head>
+<body>
+  <!-- Шапка - блок Header -->
+  <header class="header">       
+    <!-- лого сайта - надпись cintiment -->
+    <div class="first-row">
+      <div id="logo">
+        <span>CINTIMENT</span>
+      </div>
+      <div class="responsive-menu-btn" id="responsive-menu-btn" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+      </div>
+    </div>
+    <!-- блок с основным меню -->
+    <div id="menu">
+        <a href="../index.html">Homepage</a>
+        <a href="../week_top.html">Top movies of week</a>
+        <a href="../login.html">Log in</a>
+        <a href="../register.html">Create account</a>                
+    </div>
+    <script>
+      function onClickMenu() {
+        
+        document.getElementById("responsive-menu-btn").classList.toggle("change");
+        document.getElementById("menu").classList.toggle("change");
+      }
+    </script>
+  </header>
+
+  
+
+  <!-- главный блок -->
+    <div id="main">
+        <div class="main-container">
+            <div class="movie-info">
+                <div class="mov-img">
+                    <img src="../static/img/movie-img/memyselfandirene.jpg" alt="">
+                    
+                    <a href="https://www.youtube.com/embed/YWRzPLzHJl0" class="trailer">Trailer</a>
+                </div>
+                <div class="main-info">
+                    <h1 class="mov-name">Me myself and Irene</h1>
+                    <small class="mov-name-en">Me myself and Irene</small><br>
+                    <small class="mov-cat">Genre: Comedy</small>
+
+                    <div class="desc">
+                       Six years after Dumb and Dumber, Jim Carrey reunited with Peter Farrelly and Bobby Farrelly for this anarchic comedy with a hint of romance. Charlie (Carrey) is a good-natured Rhode Island state trooper who likes helping people. But years of internalizing his frustrations about his work and his family have caused Charlie to develop an alter ego: Hank, an abusive, violent, sexually compulsive police officer. Charlie can keep Hank at bay with medication, but just barely. When Irene (Renee Zellweger) finds herself in legal trouble through a series of misunderstandings involving her ex-boyfriend, Charlie must escort her          
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <h3 class="title-acts">Cast:</h3>
+                    <ul class="actors">
+                        <li class="actor">Jim Carrey</li>
+                        <li class="actor">Renée Zellweger</li>
+                        <li class="actor">Anthony Anderson</li>
+                        <li class="actor">Mongo Brownlee</li>
+                        <li class="actor">Jerod Mixon</li>
+                        <li class="actor">Robert Forster</li>                       
+                    </ul>
+                </div>
+            </div>
+             
+            <div class="mov-player">
+                <iframe width="640" height="360" src="https://voidboost.net/embed/4619" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="reviews-wrapper">
+                <div class="rev-title">
+                    <h2>Reviews about site</h2>
+                    <hr>
+                </div>
+                <div class="review-form">
+                    <h3>Write review</h3><br>
+                    <form action="" method="">
+                        <input class="f-elem" type="text" name="name" id="name" placeholder="Your name" required>
+                        <textarea class="f-elem" name="comment" placeholder="Text of comment" id="comment" cols="30" rows="10" required></textarea>
+                        <input type="submit" class="sub-btn" value="Save">
+                    </form>
+                    
+                </div>
+                <br>
+                <hr>
+                <div class="reviews" id="blockReviews">
+               
+                </div>
+                <hr>
+            </div>
+            
+        </div>
+    </div>
+
+  <!-- блок футер -->
+<div id="footer">
+    <div class="footer_info">
+      <p>CINTIMENT - website that will help you to find the movies of your mood</p>
+      <p>&reg; 2020. All rights reserved.</p>
+    </div>
+  </div>
+
+<script src="../static/js/review.js"></script>
+</body>
+</html>
