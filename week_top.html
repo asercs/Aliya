@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Заголовок страницы -->
+    <title>Top movies of week</title>
+    <!-- Внешний файл с CSS стилями -->
+    <link rel="stylesheet" href="static/css/res.css">
+    <!-- мини лого возле заголовка в закладке браузера -->
+    <link rel="shortcut icon" href="media/img/logo.png" type="image/x-icon">
+    <!-- bootstrap -->
+    
+</head>
+<body>
+  <!-- Шапка - блок Header -->
+  <header class="header">       
+    <!-- лого сайта - надпись cintiment -->
+    <div class="first-row">
+      <div id="logo">
+        <span>CINTIMENT</span>
+      </div>
+      <div class="responsive-menu-btn" id="responsive-menu-btn" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+      </div>
+    </div>
+    <!-- блок с основным меню -->
+    <div id="menu">
+        <a href="index.html">Homepage</a>
+        <a href="week_top.html">Top movies of week</a>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Create account</a>                
+    </div>
+  </header>
+
+  
+
+  <!-- главный блок -->
+<div id="main">
+    <div class="main-container">
+        <div class="title">
+            <h2>Top movies of week</h2>
+          </div>
+          <div class="results">
+              <div class="moviews-container">
+                <a href="movies list/watch3.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(static/img/movie-img/1917.jpg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">1917</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movies list/watch4.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(static/img/movie-img/avengers.jpg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">Avengers</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movies list/watch5.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(static/img/movie-img/fightclub.jpg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">Fight club</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movies list/watch6.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(static/img/movie-img/io.jpg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">IO</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movies list/watch7.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(static/img/movie-img/johnwick.jpeg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">John Wick</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movies list/watch8.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(static/img/movie-img/starwars.jpg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">Star Wars</div>
+                        </div>
+                    </div>
+                </a>
+				<a href="movies list/watch9.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(static/img/movie-img/hallpass.jfif);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">Hall pass</div>
+                        </div>
+                    </div>
+                </a>
+				<a href="movies list/watch10.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(static/img/movie-img/centralintelligence.jpg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">Central intelligence</div>
+                        </div>
+                    </div>
+                </a>
+				<a href="movies list/watch11.html" class="mov-link">
+                    <div class="movie-card">
+                        <div class="img-container" style="background-image: url(static/img/movie-img/memyselfandirene.jpg);">
+                        </div>
+                        <div class="card-body">
+                            <div class="movie_titlw">Me myself and Irene</div>
+                        </div>
+                    </div>
+                </a>
+                    
+              </div>
+          </div>
+      </div>
+    <br><br><br>
+  </div>
+
+  <!-- блок футер -->
+  <div id="footer">
+    <div class="footer_info">
+      <p>CINTIMENT - website that will help you to find the movies of your mood</p>
+      <p>&reg; 2020. All rights reserved.</p>
+    </div>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>

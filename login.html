@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/log_and_reg.css">
+<style>
+    a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+</style>    
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-wrapper">
+            <div class="title">
+                <h1>Login to Cintiment</h1>
+            </div>
+          <form action="/" method="post" class="form" onsubmit="event.preventDefault(); signIn();" novalidate>
+                <input type="text" class="inp" placeholder="email" required autocomplete="off" id="signEmail">
+                <input type="password" class="inp" placeholder="password" required autocomplete="off" id="signPass">
+                
+                <input type="submit" class="sub-inp" value="Login"> 
+                <p id="showSignError"></p>
+            </form>
+            <button><a href="register.html">Not registered yet?</a></button>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

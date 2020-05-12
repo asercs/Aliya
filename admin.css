@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*{
+  font-family: 'Lato', sans-serif;
+}
+table{
+  margin-bottom: 15px;
+  border-collapse: collapse;
+
+}
+input{
+  margin: 5px;
+}
+th, td{
+  border: 1px solid #ccc;
+  font: 13px "verdana";
+  padding: 5px;
+}
+th{
+  font-weight: bold;
+  background: #FF2800;
+  color: white;
+}
+table [type="text"],
+table [type="email"],
+table [type="number"] {
+  display: block;
+  width: 90px;
+}

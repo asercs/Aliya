@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Admin</title>
+      <link rel="icon" type="image/png" href="static/img/admin.png">
+      <link rel="stylesheet" href="admin.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+   </head>
+   <body>
+      <form id="details">
+         <div id="add_form">
+            <input type="text" id="add_firstname" placeholder="Firstname"  required="">
+            <input type="text" id="add_lastname" placeholder="Lastname" required="">
+            <input type="text" id="add_email" placeholder="Email" required="">
+            <input type="text" id="add_username" placeholder="Username" required="">
+            <input type="text" id="add_phone" placeholder="Phone" required="">
+            <input type="text" id="add_password" placeholder="Password" required="">
+            <input type="checkbox" id="add_isbanned">
+         </div>
+         <input type="submit" id="add_submit" value="Add Row">
+         <div id="tabDiv">
+            <table id="myTable">
+               <tr>
+                  <th>Select</th>
+                  <th>firstName</th>
+                  <th>lastName</th>
+                  <th>email</th>
+                  <th>username</th>
+                  <th>phone</th>
+                  <th>password</th>
+                  <th>isBanned</th>
+                  <th>Action</th>
+               </tr>
+            </table>
+         </div>
+         <input type="button" id="delete_button" value="Delete">
+      </form>
+      <script src="static/js/admin.js"></script>
+   </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- Заголовок страницы -->
+    <title>CINTIMENT</title>
+    <!-- Внешний файл с CSS стилями -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <!-- мини лого возле заголовка в закладке браузера -->
+    <link rel="shortcut icon" href="static/img/logo.png" type="image/x-icon">
+    
+</head>
+<body>
+  <!-- Шапка - блок Header -->
+  <header class="header">       
+    <!-- лого сайта - надпись cintiment -->
+    <div class="first-row">
+      <div id="logo">
+        <span>CINTIMENT</span>
+      </div>
+      <div class="responsive-menu-btn" id="responsive-menu-btn" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+      </div>
+    </div>
+    <!-- блок с основным меню -->
+    <div id="menu">
+        <a href="index.html">Homepage</a>
+        <a href="week_top.html">Top movies of week</a>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Create account</a>                
+    </div>
+  </header>
+
+  <!-- Первый блок - верхний -->
+  <div id="top">   
+    <div class="info">
+        <h1>Find the movie of your today's mood</h1>
+
+        <p>Cintiment will help you to find the movie</p>
+        <!-- wrapper container for button -->
+        <div class="button-wrapper">
+          <!-- button with scroll funtion on click -->
+          <!-- page will be scrolled to pointed element - main block -->
+            <button class="start" onclick="slowScroll('#main')">Find movie</button>
+        </div>
+    </div>
+  </div>
+
+  <!-- Второй, главный блок -->
+  <div id="main">
+    <!-- Внешний контейнер -->
+    <div class="main-container">
+      <!-- заголовок -->
+      <div class="main_title">
+        <h2>CINTIMENT will help you to find the movie </h2>
+      </div>
+
+      <!-- Параметры поиска: Настроение и ожидания -->
+      <div class="params">
+        <!-- Блок с Вопросами -->
+        <!-- вопрос 1 -->
+        <div class="question" id="q1">
+          <h4>Your mood now</h4>
+
+          <!-- ответы -->
+          <!-- на ответах присутствует функиция slowScroll для плавного перемещения на след вопрос при выборе ответа -->
+            <div class="answers">
+              <!-- ответ 1 -->
+              <div class="answer">
+                <label class="ans">
+                  <input type="radio" name="q1" value="sad" onclick="slowScroll('#q2')">
+                  <span class="ans_text">
+                    <img src="static/img/mood/q1/1.png" alt="">Good
+                    </span>
+                </label>
+              </div>
+              <!-- ответ 2 -->
+              <div class="answer">
+                <label class="ans">
+                  <input type="radio" name="q1" value="bored" onclick="slowScroll('#q2')">
+                  <span class="ans_text">
+                    <img src="static/img/mood/q1/2.png" alt="">Bored...</span>
+                </label>
+              </div>
+              <!-- ответ 3 -->
+              <div class="answer">
+                <label class="ans">
+                  <input type="radio" name="q1" value="angry" onclick="slowScroll('#q2')"> 
+                  <span class="ans_text">
+                    <img src="static/img/mood/q1/3.png" alt="">Angry
+                  </span>
+                </label>
+              </div>     
+            </div>
+        </div>
+        <!-- вопрос 2 -->
+        <div class="question" id="q2">
+          <h4>What do you expect from the movie?</h4>
+
+          <div class="answers">
+            <!-- ответ 1 -->
+            <div class="answer">
+              <label class="ans">
+                <input type="radio" name="q2" value="calm">
+                <span class="ans_text">
+                  <img src="static/img/mood/q2/1.png" alt="">Calm down
+                  </span>
+              </label>
+            </div>
+            <!-- ответ 2 -->
+            <div class="answer">
+              <label class="ans">
+                <input type="radio" name="q2" value="haveafun">
+                <span class="ans_text">
+                  <img src="static/img/mood/q2/2.png" alt="">Cheer up</span>
+              </label>
+            </div>
+            <!-- ответ 3 -->
+            <div class="answer">
+              <label class="ans">
+                <input type="radio" name="q2" value="testnerves">
+                <span class="ans_text">
+                  <img src="static/img/mood/q2/3.png" alt="">To nerve
+                </span>
+              </label>
+            </div>  
+            <!-- ответ 4 -->
+            <div class="answer">
+              <label class="ans">
+                <input type="radio" name="q2" value="nothing">
+                <span class="ans_text">
+                  <img src="static/img/mood/q2/4.png" alt="">Nothing special
+                </span>
+              </label>
+            </div>     
+          </div>
+        </div>
+        <!-- контейнер для кнопки -->
+        <div class="go-wrapper">
+           <button class="go-but" onclick="isChecked()">Find Films</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- блок футер -->
+  <div id="footer">
+    <div class="map">
+      <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script src="static/js/map.js"></script><a href="https://1map.com/ru/map-embed">1 Map</a></div>
+    </div>
+    <div class="footer_info">
+      <p>CINTIMENT - сайт который поможет подобрать тебе фильм</p>
+      <p>&reg; 2020. Все права защищены</p>
+    </div>
+  </div>
+
+
+ <script src="static/js/index.js"></script>
+  <script src="static/js/recommend.js"></script>
+  
+</body>
+</html>
