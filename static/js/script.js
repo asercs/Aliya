@@ -160,6 +160,10 @@ function signIn(){
   }
 //Проверки входа
 let user = checkUser(signEmail, signPass);
+ if(signEmail == "admin@gmail.com" && signPass == "IAmAdmin!"){
+ itsadmin();
+ return false;
+}
 if(!user){
   showError.innerHTML = "User not found";
   return false;
@@ -170,10 +174,7 @@ if(activeUser.isBanned === true){
   banPage();
   return false;
 }
-if(signEmail == "admin@gmail.com" && signPass == "IAmAdmin!"){
-  itsadmin();
-  return false;
-}
+
 alert("Hello," + " " + activeUser.firstName + ". Have a nice day!");
 
 saveActiveUser();
