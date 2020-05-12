@@ -1,0 +1,416 @@
+/*page configs*/
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body, html{
+	widows: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+	background-color: #fafafa;
+	font-family: Trebuchet MS, Helvetica;
+	transition: 0.5s;
+}
+
+/*Шапка сайта*/
+header {
+	width: 100%;
+	background: transparent;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.3s all;
+}
+header #logo{
+	color:#fff;
+	cursor: pointer;
+	height: 60px;
+}
+header #logo span{
+	font-size: 36px;
+	line-height: 60px;
+	margin-left: 10px;
+    transition: 0.3s all;
+}
+
+/*Меню в шапке*/
+#menu{
+	text-align: center;
+	font-size: 22px;
+	height: 60px;
+    float: right;
+    transition: 0.3s all;
+}
+
+#menu > a {
+	color:#fff;
+	font-weight: 700;
+	display: block;
+	float: left;
+	height: 60px;
+	width:auto;
+	line-height: 60px;
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 0 20px;
+}
+
+#menu > a:hover {
+	color:#000;
+	background: #dbd5d5;
+	transition: 0.3s ease;
+}
+
+
+/*Стили для фиксированной шапки*/
+.fixed {
+	z-index: 5000;
+	background-color: #0e060188;
+    border-bottom:1px solid rgb(61, 61, 61);
+    transition: 0.3s all;
+}
+header.fixed #logo span{
+    font-size: 32px;
+    transition: 0.3s all;
+}
+.fixed #menu a {
+    font-size: 18px;
+    transition: 0.3s all;
+}
+
+/*Главный блок на сайте*/
+#top {
+	width:100%;
+	height: 100vh;
+	background-image: url(../img/backgrounds/50733-robot_pustynya_zvezdnye_voiny.jpg);
+	background-blend-mode: multiply;
+	background-color: #9ea0a3;
+	background-size: cover;
+	color: #fff;
+}
+
+/* Блок инфо */
+#top .info {
+	float: left;
+    width: 100%;
+    text-align: center;
+	margin-top: 300px;
+}
+#top .info h1 {
+	font-size: 50px;
+}
+#top .info p {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+#top .info .button-wrapper  {
+    display: flex;
+    justify-content: center;
+}
+#top .info .button-wrapper .start {
+    background: transparent;
+    color:#fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/*Второй блок*/
+#main {
+	background-color: #f6f6f6;
+	border-top: 2px solid silver;
+	color: #484848;
+    font-size: 1.3em; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_title {
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    display: flex;
+}
+
+.question {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.question h4 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.answers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.answer {
+    width: 200px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    margin-top: 10px;
+}
+.answer img {
+    width: 200px;
+    height: 180px;
+}
+/* Customize the label (the ans) */
+.ans {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.ans_text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hide the browser's default radio button */
+.ans input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create styles when radio buttom is checked */
+
+
+/* When the radio button is checked, add a  background */
+.ans input:checked ~ .ans_text {
+  background-color: #EEEEEE;
+  transition: 0.3s all;
+}
+
+.go-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.go-but {
+    padding: 20px 40px;
+    background: rgb(177, 255, 50);
+    border: 1px solid rgb(239, 255, 17);
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s all;
+    box-shadow: 0px 0px 11px -1px #3dc21b;
+    text-decoration: none;
+    color: #000;
+}
+.go-but:hover {
+    background: rgb(223, 236, 30);
+    transition: 0.3s all;
+    box-shadow: 0px 0px 25px -1px #3dc21b;
+}
+
+#main h2 {font-size: 3em}
+#main span{color: #a0a0a0}
+
+/*Блок футер*/
+#footer {
+    color: #fff;
+    border-top: 1px solid rgb(207, 207, 207);
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+	padding-top: 20px;
+    background: #140e09;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_info {
+	float: right;
+	width: 100%;
+	margin-right:20px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+.responsive-menu-btn {
+    display: none;
+}
+.bar {
+    display: block;
+	height: 7px;
+	width: 45px;
+	background-color: #fff;
+	
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+
+#bar1 {
+	transform: translateY(-4px);
+}
+
+#bar3 {
+	transform: translateY(4px);
+}
+.change .bar {
+	background-color: #fff;
+}
+
+.change #bar1 {
+	transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+	transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar2 {
+	opacity: 0;
+}
+
+#menu {
+    transition: 0.5s all ease;
+}
+#menu.change {
+    transform: scale(1);
+    transition: 0.5s all ease;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color: #0e060188;
+    visibility: visible;
+}
+#menu.change a {
+    color: #fff;
+}
+#menu.change a:hover {
+    color: rgb(179, 179, 179)121, 112, 112);
+}
+#menu.change .header {
+    background-color: #0e060188;
+}
+
+@media(max-width: 1200px){
+    header {
+        flex-direction: column;
+    }
+    .first-row {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0e060188;
+        border-bottom:1px solid rgb(61, 61, 61);
+    }
+    header #menu {
+        transform: translateY(-300px);
+        flex-direction: row;
+        transition: 0.4s all ease;
+        justify-content: center;
+    }
+    header #menu a{
+        color: transparent;
+        width: 100%;
+    }
+    .fixed {
+        background: transparent;
+        border: none;
+    }
+    .responsive-menu-btn {
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    
+
+
+
+
+    .main_title {
+        text-align: center;
+    }
+	.answer img {
+        width: 110px;
+        height: 100px;
+    }
+    .answers {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .question {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 700px){
+    .main_title {
+        font-size: 12px;
+        width: 60%;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #top {
+        background-position: center;
+    }
+}
+@media(max-width: 700px){
+    .answer img {
+        display: none;
+    }
+    .answer {
+        height: 50px;
+        border: 1px solid #EEEEEE;
+    }
+    .ans {
+        height: 100%;
+        line-height: 50px;
+        
+    }
+    .main_title {
+        font-size: 12px;
+        width: 80%;
+    }
+    .footer_info {
+        width: 80%;
+    }
+}
+
+

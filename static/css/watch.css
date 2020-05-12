@@ -1,0 +1,438 @@
+/*page configs*/
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body, html{
+	widows: 100%;
+    height: 100%;
+    background: url(../img/backgrounds/51186-dedpul_kosplej_zazi_bitc_aktery.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: black;
+}
+
+body{
+	background-color: #fafafa;
+	font-family: Trebuchet MS, Helvetica;
+	transition: 0.5s;
+}
+
+/*Шапка сайта*/
+header {
+	width: 100%;
+	background: rgb(36, 36, 36);
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.3s all;
+}
+header #logo{
+	color:#fff;
+	cursor: pointer;
+	height: 60px;
+}
+header #logo span{
+	font-size: 32px;
+	line-height: 60px;
+	margin-left: 10px;
+    transition: 0.3s all;
+}
+
+/*Меню в шапке*/
+#menu{
+	text-align: center;
+	font-size: 22px;
+	height: 60px;
+    float: right;
+    transition: 0.3s all;
+}
+
+#menu > a {
+	color:#fff;
+	font-weight: 700;
+	display: block;
+	float: left;
+	height: 60px;
+	width:auto;
+	line-height: 60px;
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+#menu > a:hover {
+	color:#000;
+	background: #dbd5d5;
+	transition: 0.3s ease;
+}
+
+
+/*Стили для фиксированной шапки*/
+.fixed {
+	z-index: 5000;
+	background-color: #0e060188;
+    border-bottom:1px solid rgb(61, 61, 61);
+    transition: 0.3s all;
+}
+
+
+
+
+/* главный блок */
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    width: 70%;
+    margin-top: 40%;
+    margin-bottom: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #000;
+    padding: 3% 4%;
+}
+.movie-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mov-img {
+    flex:1;
+    position: relative;
+    top: -90px;
+}
+.mov-img img {
+    width: 100%;
+    height: auto;
+}
+.trailer {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    width: 100%;
+    height: 35px;
+    background: rgb(225, 241, 0);
+    border: 0;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s all ease;
+}
+.trailer:hover {
+    background: rgb(33, 48, 255);
+    transition: 0.5s all ease;
+    color:#fff;
+}
+.main-info {
+    flex:3;
+    margin-left: 35px;
+}
+.desc {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    width: 90%;
+    
+}
+.additional-info {
+    flex:1;
+}
+.title-acts {
+    padding-top: 10px;
+}
+.actors {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 10px;
+    text-decoration: underline;
+    line-height: 150%;
+}
+
+
+
+.mov-player {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-wrapper {
+    width: 80%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.review-form {
+    width: 50%;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.review-form form {
+    display: flex;
+    flex-direction: column;
+}
+.f-elem {
+    margin-bottom: 10px;
+}
+.review-form form input[type="text"]{
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+.review-form form textarea {
+    padding-left: 10px;
+    border-radius: 3px;
+}
+.sub-btn {
+    height: 35px;
+    background: rgb(225, 241, 0);
+    border: 0;
+    height: 35px;
+    background: rgb(225, 241, 0);
+    border: 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+.sub-btn:hover {
+    background: rgb(33, 48, 255);
+    transition: 0.5s all ease;
+    color:#fff;
+}
+
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.review {
+    margin-bottom: 10px;
+}
+.review p {
+    color: rgb(155, 155, 155);
+}
+
+
+
+
+/*Блок футер*/
+#footer {
+    color: #fff;
+    border-top: 1px solid rgb(77, 77, 77);
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+	padding-top: 20px;
+    background: rgb(36, 36, 36);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_info {
+	float: right;
+	width: 100%;
+	margin-right:20px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.responsive-menu-btn {
+    display: none;
+}
+.bar {
+    display: block;
+	height: 7px;
+	width: 45px;
+	background-color: #fff;
+	
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+
+#bar1 {
+	transform: translateY(-4px);
+}
+
+#bar3 {
+	transform: translateY(4px);
+}
+.change .bar {
+	background-color: #fff;
+}
+
+.change #bar1 {
+	transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+	transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar2 {
+	opacity: 0;
+}
+
+#menu {
+    transition: 0.5s all ease;
+}
+#menu.change {
+    transform: scale(1);
+    transition: 0.5s all ease;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color: #0e0601e1;
+    visibility: visible;
+}
+#menu.change a {
+    color: #fff;
+}
+#menu.change a:hover {
+    color: rgb(197, 195, 195);
+}
+
+
+@media(max-width: 1200px){
+    header {
+        flex-direction: column;
+        position: relative;
+        background-color: transparent;
+        border-bottom: none;
+    }
+    .first-row {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(36, 36, 36);
+        border-bottom:1px solid rgb(61, 61, 61);
+    }
+    header #menu {
+        transform: translateY(-300px);
+        flex-direction: row;
+        transition: 0.4s all ease;
+        justify-content: center;
+    }
+    header #menu a{
+        color: transparent;
+        width: 80%;
+        align-self: center;
+    }
+    .fixed {
+        background: transparent;
+        border: none;
+    }
+    .responsive-menu-btn {
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+}
+
+
+@media(max-width: 900px){
+    .movie-info {
+        flex-direction: column;
+        display: grid;
+        grid-template-areas: "a c"
+                             "b b";
+    }
+    .mov-img {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 35px;
+        grid-area: a;
+        width: 100%;
+
+    }
+    .mov-img img {
+        width: 70%;
+        height: auto;
+    }
+    .main-info {
+        grid-area: b;
+        margin-top: 30px;
+    }
+    .additional-info {
+        grid-area: c;
+    }
+    
+    .trailer {
+        width: 70%;
+    }
+    .review-form {
+        width: 80%;
+    }
+    .footer_info {
+        width: 80%;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .main-container {
+        width: 100%;
+    }
+    .movie-info {
+        flex-direction: column;
+        display: grid;
+        grid-template-areas: "a"
+                             "b"
+                             "c";
+    }
+    .mov-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        grid-area: a;
+        width: 100%;
+    }
+    .mov-img img {
+        width: 100%;
+    }
+    .main-info {
+        grid-area: b;
+        margin-top: 30px;
+    }
+    .additional-info {
+        grid-area: c;
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .mov-img img {
+        width: 100%;
+    }
+    .trailer {
+        width: 100%;
+    }
+
+}
