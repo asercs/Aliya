@@ -65,6 +65,7 @@ function signUp(){
   //Заполнение функцией registerUser
   registerUser(firstName, lastName, email, username, phone, password, false);
   alert("Success reg");
+  location.replace("login.html")
 }
 //Функция валидации
 function ValidateEmail(email){
@@ -176,7 +177,7 @@ if(activeUser.email == "admin@gmail.com" && activeUser.password == "IAmAdmin!"){
 alert("Hello," + " " + activeUser.firstName + ". Have a nice day!");
 
 saveActiveUser();
-
+location.replace("index.html")
 
 return false;
 
